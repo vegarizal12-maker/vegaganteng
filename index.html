@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#11110f">
+    <meta name="description" content="A little something, made just for you.">
+
+    <title>Ndakrem — A Little Something</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="ambient-background">
+    <div class="ambient-glow glow-one"></div>
+    <div class="ambient-glow glow-two"></div>
+</div>
+    <div class="intro-screen" id="introScreen">
+        <div class="intro-content">
+
+            <span class="intro-logo">N<span>.</span></span>
+
+            <p class="intro-caption">
+                A PERSONAL EXPERIENCE
+            </p>
+
+            <h1>
+            Some things are<br>
+            better left <em>unsaid.</em>
+            </h1>
+
+            <button id="enterButton" class="enter-button">
+                ENTER EXPERIENCE <span>↗</span>
+            </button>
+
+            <p class="intro-footer">
+                DESIGNED BY NDAKREEM — 2026
+            </p>
+        </div>
+    </div>
+
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="navbar">
+        <a href="#" class="logo">N<span>.</span></a>
+
+        <span class="nav-label">A PERSONAL EXPERIENCE</span>
+
+        <span class="status">
+            <span class="status-dot"></span>
+            MADE BY NDAKREEM
+        </span>
+    </header>
+
+    <main>
+        <section class="hero">
+
+            <div class="hero-top">
+                <span>001 — A LITTLE NOTE</span>
+                <span>MADE JUST FOR FATMA</span>
+            </div>
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    THERE'S SOMETHING I WANT TO SAY
+                </p>
+
+                <h1>
+                    Some people<br>
+                    just feel <em>different.</em>
+                </h1>
+
+                <p class="description">
+                    Among all the ordinary things in life,
+                    somehow, you became one of my favorites.
+                    And I thought you deserved to know.
+                </p>
+
+                <button class="open-button" id="openLetter">
+                    <span>Read my little note</span>
+                    <span class="button-arrow">↗</span>
+                </button>
+
+                <div class="letter" id="letter" aria-hidden="true">
+                    <div class="letter-line"></div>
+
+                    <p class="letter-label">A NOTE FOR YOU</p>
+
+                    <p class="letter-text">
+                        I don't know what tomorrow holds,
+                        and I don't want to rush anything.
+
+                        <br><br>
+
+                        I just know that talking to you
+                        makes an ordinary day feel
+                        a little less ordinary.
+
+                        <br><br>
+
+                        That's all I wanted you to know.
+                    </p>
+
+                    <p class="signature">— someone who thinks of you</p>
+                </div>
+
+            </div>
+
+            <div class="hero-bottom">
+                <span>NO EXPECTATIONS. JUST HONESTY.</span>
+                <span class="scroll-indicator">SCROLL A LITTLE ↓</span>
+            </div>
+
+        </section>
+
+        <section class="closing">
+            <p>NOT EVERY FEELING NEEDS A BIG SPEECH.</p>
+            <h2>Sometimes, <em>simple is enough.</em></h2>
+            <span class="closing-mark">N.</span>
+        </section>
+    </main>
+    <!-- PREMIUM GALLERY -->
+
+<section class="gallery-section" id="gallery">
+
+    <div class="gallery-heading">
+        <div>
+            <p class="gallery-eyebrow">02 — THE COLLECTION</p>
+            <h2>Little moments,<br><em>lasting memories.</em></h2>
+        </div>
+
+        <p class="gallery-description">
+            Every picture holds a story
+            that words could never fully tell.
+        </p>
+    </div>
+
+    <div class="gallery-grid">
+
+        <button class="gallery-item gallery-large"
+                data-image="images/foto-utama.jpeg"
+                data-title="01 — Myself">
+
+            <img
+                src="images/foto-utama.jpeg"
+                alt="Foto pribadi"
+                loading="lazy">
+
+            <span class="gallery-overlay">
+                <span>MYSELF</span>
+                <span class="gallery-arrow">↗</span>
+            </span>
+
+        </button>
+
+        <button class="gallery-item"
+                data-image="images/foto-pantai.jpeg"
+                data-title="02 — Beach Memories">
+
+            <img
+                src="images/foto-pantai.jpeg"
+                alt="Foto bersama di pantai"
+                loading="lazy">
+
+            <span class="gallery-overlay">
+                <span>BEACH MEMORIES</span>
+                <span class="gallery-arrow">↗</span>
+            </span>
+
+        </button>
+
+        <button class="gallery-item"
+                data-image="images/foto-skuter.jpeg"
+                data-title="03 — Little Journey">
+
+            <img
+                src="images/foto-skuter.jpeg"
+                alt="Foto bersama naik skuter"
+                loading="lazy">
+
+            <span class="gallery-overlay">
+                <span>LITTLE JOURNEY</span>
+                <span class="gallery-arrow">↗</span>
+            </span>
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- LIGHTBOX -->
+
+<div class="lightbox" id="lightbox"
+     role="dialog"
+     aria-modal="true"
+     aria-label="Pratinjau foto"
+     aria-hidden="true">
+
+    <button class="lightbox-close"
+            id="lightboxClose"
+            aria-label="Tutup foto">×</button>
+
+    <div class="lightbox-content">
+        <img id="lightboxImage" src="" alt="">
+        <p id="lightboxCaption"></p>
+    </div>
+
+    <span class="lightbox-hint">PRESS ESC TO CLOSE</span>
+
+</div>
+
+    <footer class="footer">
+        <span>Ndakrem © 2026</span>
+        <span>MADE WITH A LITTLE COURAGE.</span>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+    <div class="custom-cursor" id="customCursor">
+    </div>
+</body>
+</html>
